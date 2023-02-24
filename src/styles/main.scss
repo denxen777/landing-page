@@ -160,6 +160,36 @@ body {
       gap: 9px;
     }
   }
+
+  &__portfolio {
+    padding: 113px 0 96px 0;
+    background-color: $color-background-secondary;
+
+    &-inner {
+      text-align: center;
+    }
+
+    &-title {
+      padding-bottom: 50px;
+    }
+
+    &-text {
+      /*margin-bottom: 99px;
+      text-decoration: underline;*/
+      width: fit-content;
+      margin: 0 auto 99px;
+      border-bottom: 1px solid;
+      line-height: 15px;
+    }
+
+    &-text:last-child {
+      margin-bottom: 0;
+    }
+
+    &-image {
+      margin-bottom: 45px;
+    }
+  }
 }
 
 .footer {
