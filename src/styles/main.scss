@@ -2,6 +2,10 @@
 @import "reset";
 @import "variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $color-text-primary;
   font-family: Gilroy, sans-serif;
@@ -23,6 +27,10 @@ body {
   padding: 33px 0 32px 0;
   border-bottom: 1px solid $color-header-line;
   font-weight: bold;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
 
   &__menu {
     &-list {
@@ -42,7 +50,7 @@ body {
       padding: 10px;
       transition: color .25s;
 
-      &:hover {
+      &:hover, &:active {
         color: $color-text-primary;
       }
     }
@@ -174,8 +182,6 @@ body {
     }
 
     &-text {
-      /*margin-bottom: 99px;
-      text-decoration: underline;*/
       width: fit-content;
       margin: 0 auto 99px;
       border-bottom: 1px solid;
