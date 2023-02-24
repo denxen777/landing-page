@@ -11,7 +11,7 @@ export const initMenuActiveBySectionPosition = () => {
     sections.forEach(section => {
       const sectionPercent = getViewPercentage(section);
       if (sectionPercent > currentPercent) {
-        current = section.getAttribute('id');
+        current = section.getAttribute('data-section-id');
         currentPercent = sectionPercent;
       }
     });
