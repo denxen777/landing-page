@@ -14,6 +14,11 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-size: $font-size-title;
+  font-weight: 700;
+}
+
 .header {
   padding: 33px 0 32px 0;
   border-bottom: 1px solid $color-header-line;
