@@ -113,8 +113,6 @@ body {
     }
 
     &-title {
-      font-size: 34px;
-      font-weight: 700;
       margin-bottom: 25px;
     }
 
@@ -125,6 +123,41 @@ body {
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+
+  &__skills {
+    text-align: center;
+    padding: 91px 0 110px 0;
+
+    &-title {
+      margin-bottom: 70px;
+    }
+
+    &-text {
+      margin-bottom: 83px;
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-image {
+      margin-bottom: 23px;
+    }
+
+    &-name {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      color: $color-text-secondary;
+      margin-bottom: 40px;
+    }
+
+    &-stars {
+      display: flex;
+      gap: 9px;
     }
   }
 
