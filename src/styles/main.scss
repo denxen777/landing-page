@@ -50,7 +50,7 @@ body {
       padding: 10px;
       transition: color .25s;
 
-      &:hover, &:active {
+      &:hover, &.active {
         color: $color-text-primary;
       }
     }
