@@ -50,7 +50,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin: 40px 0 104px 0;
+    padding: 40px 0 104px 0;
     row-gap: 50px;
 
     &-name {
@@ -95,6 +95,30 @@ body {
 
       &:hover, &.active {
         color: $color-text-primary;
+      }
+    }
+  }
+
+  &__about {
+    background-color: $color-background-secondary;
+
+    &-inner {
+      text-align: center;
+      padding: 120px 0 107px 0;
+    }
+
+    &-title {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    &-text {
+      margin-bottom: 35px;
+      line-height: 22px;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
