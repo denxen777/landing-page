@@ -1,0 +1,101 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+
+body {
+  color: $color-text-primary;
+  font-family: Gilroy, sans-serif;
+  font-size: $font-size-primary;
+  font-weight: 500;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 33px 0 32px 0;
+  border-bottom: 1px solid $color-header-line;
+  font-weight: bold;
+
+  &__menu {
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    &-item {
+
+    }
+
+    &-link {
+      color: $color-text-secondary;
+      text-decoration: none;
+      margin: -10px;
+      padding: 10px;
+      transition: color .25s;
+
+      &:hover {
+        color: $color-text-primary;
+      }
+    }
+  }
+}
+
+.main {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 40px 0 104px 0;
+    row-gap: 50px;
+
+    &-name {
+      line-height: 59px;
+      font-weight: 700;
+      font-size: 47px;
+      width: min-content;
+    }
+
+    &-position {
+      line-height: 22px;
+    }
+
+    &-photo-wrapper {
+      flex: 1 1 100%;
+      height: 385px;
+    }
+
+    &-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &-lang {
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      gap: 5px;
+      transform: rotate(-90deg);
+      transform-origin: 50% -112%;
+      padding-left: 6px;
+    }
+
+    &-lang-btn {
+      color: $color-text-secondary;
+      transition: color .25s;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: inherit;
+
+      &:hover, &.active {
+        color: $color-text-primary;
+      }
+    }
+  }
+}

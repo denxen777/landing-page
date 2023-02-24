@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<header class="container header">
+    <nav class="header__menu">
+        <ul class="header__menu-list">
+            <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Home</a>
+            </li>
+            <li class="header__menu-item">
+                <a class="header__menu-link" href="#">About me</a>
+            </li>
+            <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Skills</a>
+            </li>
+            <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Portfolio</a>
+            </li>
+            <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="container main">
+    <section class="main__info">
+        <h2 class="main__info-name">Denis Zaripov</h2>
+        <p class="main__info-position">UX | UI designer<br>26 years old, Chunskiy</p>
+        <div class="main__info-lang">
+            <button class="main__info-lang-btn">RU</button>|<button class="main__info-lang-btn active">ENG</button>
+        </div>
+        <div class="main__info-photo-wrapper">
+            <img class="main__info-photo" src="<%=require('./src/media/images/chel.jpg')%>" alt="my photo">
+        </div>
+    </section>
+</main>
+<footer class="container">Футер</footer>
+</body>
+</html>
